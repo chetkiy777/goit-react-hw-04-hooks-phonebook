@@ -7,7 +7,7 @@ export const Filter = ({ onFilterInput }) => {
 
   useEffect(() => {
     onFilterInput(filter);
-  }, [filter]);
+  }, [filter, onFilterInput]);
 
   return (
     <div>
