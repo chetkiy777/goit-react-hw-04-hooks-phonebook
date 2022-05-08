@@ -19,7 +19,7 @@ export const ContactForm = props => {
       toggleDisbled(true);
       alert(`${name} is already in contacts.`);
     }
-  }, [name, number]);
+  }, [name, number, props.contacts]);
 
   const resetForm = () => {
     setName('');
